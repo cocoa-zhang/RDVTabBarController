@@ -73,7 +73,7 @@
         }
     } else if (@available(iOS 11.0, *)) {
         CGFloat safeAreaBottom = UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom;
-        tabBarHeight = 58.f + safeAreaBottom / 1.5f;
+        tabBarHeight = tabBarHeight + safeAreaBottom / 1.5f;
     }
 
     if (!self.tabBarHidden) {
